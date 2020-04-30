@@ -110,6 +110,16 @@ var trackOutboundLink = function(url) {
 
 <body class="tm-isblog home">
 
+	<script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+	<script>
+		window.loadWatsonAssistantChat({
+			integrationID: "1593fd91-e7fa-4429-924a-48021269745e", // The ID of this integration.
+			region: "us-south", // The region your integration is hosted in.
+			serviceInstanceID: "793b2e66-8db1-405d-b898-363f4c121622" // The ID of your service instance.
+		}).then(function (instance) {
+			instance.render();
+		});
+	</script>
 
 		<!-- uk-hidden-small-->
 		<div class="tm-block tm-block-light tm-toolbar uk-clearfix">
